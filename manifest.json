@@ -4,6 +4,7 @@
 	"name": "Encoder", 
 	"version": "0.0.1",
 	"description": "Encoder by people", 
+	"icons": { "128": "images/spy-128.png" },
 
 	"browser_action": {
 		"default_title": "open encoder", 

@@ -1,5 +1,5 @@
 $(document).ready(function () {
-	$('#wrapper').html('<div class="category" id="coder">шифратор</div> <div class="category" id="deCoder">дешифратор</div><div id="shellTextarea"><textarea class="textArr" id="text" placeholder="текст"> </textarea><textarea class="textArr" id="code" placeholder="шифр"></textarea></div><div class="btn" id="btnCode"> зашифровать! </div><div class="btn" id="btndeCode"> дешифровать! </div>');
+	$('#wrapper').html('<div class="category" id="coder">шифратор</div> <div class="category" id="deCoder">дешифратор</div><div id="shellTextarea"><textarea class="textArr" id="text" placeholder="текст"> </textarea><textarea class="textArr" id="code" placeholder="шифр"></textarea></div><div class="btn" id="btnCode"> зашифровать </div><div class="btn" id="btndeCode"> дешифровать </div>');
 
 
 var latin = ["а", "б", "в", "г", "д", "е", 
@@ -12,7 +12,14 @@ var latin = ["а", "б", "в", "г", "д", "е",
 			"Ё", "Ж", "З", "И", "Й", "К", "Л",  
 			"М", "Н", "О", "П", "Р", "С", "Т", 
 			"У", "Ф", "Х", "Ц", "Ч", "Ш","Щ","Ъ",
-			"Ы","Ь","Э","Ю","Я"];
+			"Ы","Ь","Э","Ю","Я", "a", "b", "c", "d", "e", "f", 
+			"g", "h", "i", "j", "k", "l", "m",  
+			"n", "o", "p", "q", "r", "s", "t", 
+			"u", "v", "w", "x", "y", "z","/",":",
+			"A", "B", "C", "D", "E", "F", 
+			"G", "H", "I", "J", "K", "L", "M",  
+			"N", "O", "P", "Q", "R", "S", "T", 
+			"U", "V", "W", "X", "Y", "Z"];
 
 var code = ["$", ")", "!", "'", ">", "=", 
 			"%", "(", "`", "]", "<", "-", "♂", 
@@ -24,7 +31,14 @@ var code = ["$", ")", "!", "'", ">", "=",
 			"✒", "✖", "✗", "✪", "✫", "✬", "✯",  
 			"✰", "✍", "✆", "✄", "✂", "❥", "❍", 
 			"❒", "™", "‰", "†", "‡", "…","ω","ψ",
-			"σ","ς","θ","η","ζ"];	
+			"σ","ς","θ","η","ζ","♔", "♕", "♖", "♗", "♘", "♙", 
+			"♚", "♛", "♜", "♝", "♞", "♟", "☍",  
+			"☌", "☋", "☊", "☾", "☽", "☷", "☶", 
+			"☵", "☴", "☳", "☲", "☱", "☰","⁾","⁻",
+			"├", "¼", "½", "¬", "⌐", "¿", 
+			"Ñ", "ñ", "₧", "¥", "£", "¢", "ÿ",  
+			"€", "■", "√", "இ", "〄", "☠", "Џ", 
+			"Գ", "☄", "ッ", "█", "∞", "∑"];	
 
 
 $("#btnCode").click(function(){
