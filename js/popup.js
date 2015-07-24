@@ -1,5 +1,5 @@
 $(document).ready(function () {
-	$('#wrapper').html('<div class="category" id="coder">шифратор</div> <div class="category" id="deCoder">дешифратор</div><div id="shellTextarea"><textarea class="textArr" id="text" placeholder="текст"> </textarea><textarea class="textArr" id="code" placeholder="шифр"></textarea></div><div class="btn" id="btnCode"> зашифровать </div><div class="btn" id="btndeCode"> дешифровать </div>');
+	$('#wrapper').html('<div class="category" id="coder">шифратор</div> <div class="category" id="deCoder">дешифратор</div><div id="shellTextarea"><textarea class="textArr" id="text" placeholder="текст"> </textarea><textarea class="textArr" id="code" placeholder="шифр"></textarea></div><div class="btn" id="btnCode"> зашифровать </div><div class="btn" id="btndeCode"> дешифровать </div> <a id="link" target="_blank" href="http://vk.com/encoder_chrome"> vk.com/encoder_chrome </a>');
 
 
 var latin = ["а", "б", "в", "г", "д", "е", 
